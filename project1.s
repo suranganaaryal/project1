@@ -48,3 +48,8 @@ bge $s2, 58, counter
 sub $s2, $s2, 48
 add $s3, $s3, $s2
 j counter
+
+output:
+li $v0, 4
+la $a0, enter
+syscall
