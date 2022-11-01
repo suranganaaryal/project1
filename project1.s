@@ -25,3 +25,9 @@ addi $t0, $t0, 1
 bge $s2, 97, lowercaseT # lowercase 
 bge $s2, 65, uppercaseT # uppercase 
 bge $s2, 48, numbers # for number 0
+
+# creating a function
+counter:
+addi $t3, $t3, 1
+lb $s2,($t3)
+j verify
