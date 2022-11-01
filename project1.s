@@ -28,3 +28,17 @@ counter:
 addi $t3, $t3, 1
 lb $s2,($t3)
 j verify
+
+# uppercase character T
+uppercaseT:
+bge $s2, 85, counter # for letter t
+sub $s2, $s2, 55
+add $s3, $s3, $s2
+j counter
+
+# for the lowercase character t
+lowercaseT:
+bge $s2, 117, counter # for letter t
+sub $s2, $s2, 87
+add $s3, $s3, $s2
+j counter
