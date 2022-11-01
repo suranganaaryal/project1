@@ -42,3 +42,9 @@ bge $s2, 117, counter # for letter t
 sub $s2, $s2, 87
 add $s3, $s3, $s2
 j counter
+
+numbers:
+bge $s2, 58, counter
+sub $s2, $s2, 48
+add $s3, $s3, $s2
+j counter
