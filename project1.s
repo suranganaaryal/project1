@@ -16,3 +16,9 @@ lb $s2, ($t3)
 
 verify:
 beq $t0, 10, output
+
+sort_values:
+addi $t0, $t0, 1
+bge $s2, 97, lowercaseU 
+bge $s2, 65, uppercaseU 
+bge $s2, 48, numbers 
