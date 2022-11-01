@@ -22,3 +22,9 @@ addi $t0, $t0, 1
 bge $s2, 97, lowercaseU 
 bge $s2, 65, uppercaseU 
 bge $s2, 48, numbers 
+
+# creating a function
+counter:
+addi $t3, $t3, 1
+lb $s2,($t3)
+j verify
