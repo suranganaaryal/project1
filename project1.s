@@ -53,3 +53,9 @@ output:
 li $v0, 4
 la $a0, enter
 syscall
+
+addi $t5,$zero,5
+li $v0, 1
+mul $s3, $s3, $t5
+move $a0, $s3
+syscall
