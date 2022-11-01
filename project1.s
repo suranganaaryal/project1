@@ -62,3 +62,6 @@ li $v0, 1
 mul $s3, $s3, $t5
 move $a0, $s3
 syscall
+
+li $v0, 10
+syscall
